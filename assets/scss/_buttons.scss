@@ -22,10 +22,10 @@ a.button {
   cursor: pointer;
   outline: none;
   // Default
-  background: $light-background-header;
+  background: #0f172a;
 
   @media (prefers-color-scheme: dark) {
-    background: $dark-background-header;
+    background: #0f172a;
     color: inherit;
   }
 
@@ -34,7 +34,7 @@ a.button {
   }
 
   [data-theme=dark] & {
-    background: $dark-background-header;
+    background: #0f172a;
     color: inherit;
   }
 
@@ -98,6 +98,12 @@ a.button {
 
 .code-toolbar {
   margin-bottom: 20px;
+  
+  > pre {
+    margin-top: 0;
+    border: 1px solid #0e2c5c;
+    box-shadow: 0 2px 10px rgba(7,23,48,.4);
+  }
 
   .toolbar-item a {
     position: relative;

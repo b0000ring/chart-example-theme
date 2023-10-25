@@ -4,19 +4,19 @@
   background: $light-background-header;
 
   @media (prefers-color-scheme: dark) {
-    background: $dark-background-header;
+    background: none;
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-background-header;
+    background: none;
   }
 
   [data-theme=dark] & {
-    background: $dark-background-header;
+    background: none;
   }
 
   [data-theme=light] & {
-    background: $light-background-header;
+    background: none;
   }
 
   @media #{$media-size-phone} {
