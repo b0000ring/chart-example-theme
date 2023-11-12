@@ -26,6 +26,22 @@
     border: none;
     margin: 0;
     padding: 10px;
+
+    @media (prefers-color-scheme: dark) {
+      background: $dark-background;
+    }
+  
+    @media (prefers-color-scheme: light) {
+      background: $light-background;
+    }
+  
+    [data-theme=dark] & {
+      background: $dark-background;
+    }
+  
+    [data-theme=light] & {
+      background: $light-background;
+    }
   }
 
   &__inner {
